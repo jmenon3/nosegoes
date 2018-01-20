@@ -53,15 +53,20 @@
 <div class="signup-w3ls">
     <div class="signup-agile1">
         <form action="#" method="post">
-
-          <button class="imgbutton" style='float:left; width:50%; '>
+          <script type="text/javascript">
+          function performClick(elemId) {
+            var elem = document.getElementById(elemId);
+            if(elem && document.createEvent) {
+              var evt = document.createEvent("MouseEvents");
+              evt.initEvent("click", true, false);
+              elem.dispatchEvent(evt);
+              }
+            }
+          </script>
+          <button class="imgbutton" onclick= "performClick('theFile');" style='float:left; width:50%; '>
+              <input type="file" id="theFile" />
             <img src="blank_profile.png"  width="400" height="400" />
           </button>
-
-          <img src='temp.png' id='img1' name='img1'>
-          <select name="users" onchange="show(this.value);SwitchPic(img1);"> </select>
-          <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
-
             <div class="form-control">
                 <label class="header">Name :</label>
                 <input type="text" id="store_name" name="store_name" placeholder="Name" title="Please enter your Name" required="">
