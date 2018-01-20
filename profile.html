@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NoseGoes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="indexcss.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    /* On small screens, set height to 'auto' for sidenav and grid */
+
+    @media screen and (max-width: 767px) {
+      .row.content {height:auto;}
+    }
+
+  </style>
+</head>
+<body>
+
+
 <div class="signup-w3ls">
     <div class="signup-agile1">
         <form action="#" method="post">
@@ -10,22 +40,7 @@
 
             <div class="form-control">
                 <label class="header">Store Name :</label>
-                <input type="text" id="store_name" name="store_name" placeholder="Store Name" title="Please enter your First Name" required="">
-            </div>
-
-            <div class="form-control">
-                <label class="header">Store Type :</label>
-                <input type="text" id="store_type" name="store_type" placeholder="Store Type" title="Please enter your Last Name" required="">
-            </div>
-
-            <div class="form-control">
-                <label class="header">Owner Type :</label>
-                <input type="text" id="owner_type" name="owner_type" placeholder="Owner Type" title="Please enter a valid email" required="">
-            </div>
-
-            <div class="form-control">
-                <label class="header">Website :</label>
-                <input type="url" id="website" name="website" placeholder="Website" id="password1" required="">
+                <input type="text" id="store_name" name="store_name" placeholder="Name" title="Please enter your Name" required="">
             </div>
 
             <div class="form-control">
