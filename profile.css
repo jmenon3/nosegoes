@@ -14,12 +14,3 @@ form{
   text-align: center;
   border-width: 0px;
 }
-
-input{
-  margin-bottom: 10px;
-}
-.loginbutton{
-  min-width:  = 100px;
-  color: white;
-  background-color: DarkBlue; 
-}

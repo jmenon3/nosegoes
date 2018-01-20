@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Signup</title>
+  <title>NoseGoes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="indexcss.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -18,29 +17,12 @@
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
-
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-
     /* On small screens, set height to 'auto' for sidenav and grid */
+
     @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
       .row.content {height:auto;}
     }
+
   </style>
 </head>
 <body>
@@ -57,10 +39,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href=index.html>Home</a></li>
+        <li class="active"><a href=#>About</a></li>
+        <li><a href=faq.html>FAQ</a></li>
+        <li><a href=contacts.html>Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -71,35 +53,26 @@
 
 <div class="container-fluid text-center">
   <div class="row content">
-
-
     <div class="col-sm-12 text-left">
-          <h1>Join our Army!</h1>
-
+      <h1>About Us</h1>
+      <p>Just exactly what is NoseGoes?
+      </p>
       <hr>
-<div class="mainform">
+
+
 <form action="/action_page.php">
-    <div class = "col-sm-5 text-left"></div>
-  <div class = "col-sm-1 text-left">Email: </div> <div class = "col-sm-6 text-left"> <input type="text" name="email"  ><br> </div>
-  <div class = "col-sm-5 text-left"></div>
-  <div class = "col-sm-1 text-left">Username: </div> <div class = "col-sm-6 text-left"> <input type="text" name="Username1"  ><br> </div>
-  <div class = "col-sm-5 text-left"></div>
-  <div class = "col-sm-1 text-left">Password: </div> <div class = "col-sm-6 text-left"> <input type="password" name="password2"  ><br> </div>
-    <div class = "col-sm-5 text-left"></div>
-  <div class = "col-sm-1 text-left">Enter Password again: </div> <div class = "col-sm-6 text-left"> <input type="password" name="Password2"  ><br> </div>
-
-<div class = "col-sm-3 text-left"></div>
-<div class = "col-sm-4 text-left"><div class="loginbutton"><input type="submit" value="SignUp"> </div>
-<p>
-  <a href= index.html >Remember your account? Go back to Login</a> </div>
-
-</form>
-      </div>
-
-    </div>
-
+    <div class="col-sm-3 text-left">
   </div>
-</div>
+    <div class="col-sm-6 text-left">
+
+  <h3> We are the solution to everyday assignements in your party! We help you assign tasks to anyone in your group in an orderly fashion. </h3>
+  <h3> We believe in recognizing greatness, and if you finish your tasks in your group you should be rewarded. But we also shame those who don't, becuase frankly who would want to be that person? </h3>
+  <h3> Finish your tasks, and you will get points. In your group, if you have the least amount of points, you will recieve a consequences based on how the group determines it. It may be more tasks in the folowign wek, pay the highest points group member, or being able to draw and humiliate you in public. Good Luck!</h3>
+
+      
+  </div>
+
+
 
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 <script>
@@ -114,8 +87,8 @@
     messagingSenderId: "837300799095"
   };
   firebase.initializeApp(config);
-
 </script>
 
 </body>
+
 </html>
