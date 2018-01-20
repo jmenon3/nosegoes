@@ -14,6 +14,13 @@ form{
   text-align: center;
   border-width: 0px;
 }
+
+.imgbutton{
+  min-width:  = 100px;
+  color: white;
+  background-color: DarkBlue;
+}
+
 .signup-w3ls {
  width: 50%;
  margin: 70px 25% 80%;
