@@ -53,7 +53,7 @@ input#image,input#store_name, input#store_type,input#owner_type, input#website,i
  padding:0 40px;
  width:40%;
  height:55px;
- border: 1px solid #dadada;
+
  color: grey;
  text-align:justify;
  outline: none;
@@ -61,15 +61,9 @@ input#image,input#store_name, input#store_type,input#owner_type, input#website,i
  font-size: 16px;
  font-weight:normal;
  font-family: 'Muli', sans-serif;
- border-radius:30px;
- -webkit-border-radius:30px;
- -moz-border-radius:30px;
- -o-border-radius:30px;
- -ms-border-radius:30px;
 }
 input#image:focus,input#store_name:focus, input#store_type:focus,input#owner_type:focus, input#website:focus,input#contact_number:focus,input#contact_email:focus  {
  background-color:#f5f8fa !important;
- border:1px solid #dadada;
 }
 input::-webkit-input-placeholder {
 color: grey;
@@ -99,12 +93,6 @@ color: grey;
  -webkit-transition: all 0.5s ease-in-out;
  -moz-transition: all 0.5s ease-in-out;
  -o-transition: all 0.5s ease-in-out;
- border-radius: 30px;
- -webkit-border-radius: 30px;
- -moz-border-radius: 30px;
- -o-border-radius: 30px;
- -ms-border-radius: 30px;
- font-family: 'Muli', sans-serif;
 }
 .register:hover {
  background-color:#36b051;
