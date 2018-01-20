@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>NoseGoes</title>
+  <title>Signup</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="indexcss.css">
@@ -17,12 +17,29 @@
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
-    /* On small screens, set height to 'auto' for sidenav and grid */
 
-    @media screen and (max-width: 767px) {
-      .row.content {height:auto;}
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
     }
 
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
   </style>
 </head>
 <body>
@@ -53,42 +70,45 @@
 
 <div class="container-fluid text-center">
   <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+    </div>
+
     <div class="col-sm-8 text-left">
-      <h1>Welcome to NoseGoes!</h1>
-      <p>Hard to organize tasks amongst your housemates? Join us in our adventure as we help you assign tasks to your housemates, and make sure your friends do what they are supposed to! Don't take us too lightly now, we will embrass you if you don't do your work.
-      </p>
+          <h1>Join our Army!</h1>
+
       <hr>
+<div class="mainform">
 <form action="/action_page.php">
-Username: <input type="text" name="Username"  ><br>
-Password: <input type="password" name="PassWord" ><br>
-<div class="loginbutton"><input type="submit" value="Login"> </div>
+Username: <input type="text" name="Username1"  ><br>
+Password: <input type="password" name="PassWord1" ><br>
+Enter password again: <input type="password" name="PassWord2" ><br>
+Email: <input type="text" name="email" ><br>
+
+<div class="loginbutton"><input type="submit" value="SignUp"> </div>
 <p>
-<<<<<<< HEAD
-  <a href="https://www.w3schools.com"> Click Here to Sign Up!
-  </a>
+  <a href= index.html >Remember your account? Go back to Login</a>
 
+</form>
+      </div>
 
-=======
-  <a href= signup.html>Don't have an account? Click Here to Sign Up!</a>
->>>>>>> 294b405d02e2a9b920badb32179a57dee35f6ab9
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
 
-<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
-    authDomain: "nosegoes-34831.firebaseapp.com",
-    databaseURL: "https://nosegoes-34831.firebaseio.com",
-    projectId: "nosegoes-34831",
-    storageBucket: "",
-    messagingSenderId: "837300799095"
-  };
-  firebase.initializeApp(config);
-</script>
-
 </body>
-
 </html>
