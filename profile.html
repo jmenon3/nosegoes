@@ -39,9 +39,10 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-        <li><a href=index.html>Home</a></li>
-        <li><a href="#">Notifactions</a></li>
-        <li class = "active"><a href="#">Profile</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href=about.html>About</a></li>
+          <li><a href=faq.html>FAQ</a></li>
+          <li><a href=contacts.html>Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href=index.html><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -54,13 +55,12 @@
     <div class="signup-agile1">
         <form action="#" method="post">
 
-          <button class="imgbutton" style='float:left; width:50%; '>
-            <img src="blank_profile.png"  width="400" height="400" />
-          </button>
+            <div class="form-control">
+                <label class="header">Profile Photo:</label>
 
-          <img src='temp.png' id='img1' name='img1'>
-          <select name="users" onchange="show(this.value);SwitchPic(img1);"> </select>
-          
+                <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+            </div>
+
             <div class="form-control">
                 <label class="header">Name :</label>
                 <input type="text" id="store_name" name="store_name" placeholder="Name" title="Please enter your Name" required="">
