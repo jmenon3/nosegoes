@@ -27,6 +27,39 @@
 </head>
 <body>
 
+   <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+   <script>
+     // Initialize Firebase
+
+     var config = {
+       apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
+       authDomain: "nosegoes-34831.firebaseapp.com",
+       databaseURL: "https://nosegoes-34831.firebaseio.com",
+       projectId: "nosegoes-34831",
+       storageBucket: "",
+       messagingSenderId: "837300799095"
+     };
+     firebase.initializeApp(config);
+   </script>
+
+   <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+   <script type="text/javascript">
+    var uiConfig = {
+     signInSuccessUrl: 'contacts.html',
+     signInOptions: [
+      // Specify providers you want to offer your users.
+      firebase.auth.EmailAuthProvider.PROVIDER_ID
+     ],
+     // Terms of service url can be specified and will show up in the widget.
+     tosUrl: '<your-tos-url>'
+    };
+    // Initialize the FirebaseUI Widget using Firebase.
+    var ui = new firebaseui.auth.AuthUI(firebase.auth());
+    // The start method will wait until the DOM is loaded.
+    ui.start('#firebaseui-auth-container', uiConfig);
+ </script>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -58,35 +91,12 @@
       <p>Hard to organize tasks amongst your housemates? Join us in our adventure as we help you assign tasks to your housemates, and make sure your friends do what they are supposed to! Don't take us too lightly now, we will embrass you if you don't do your work.
       </p>
       <hr>
-      <div class="center">
-        <img src="http://www.toxel.com/wp-content/uploads/2008/08/creativelogos15.jpg">
-      </div>
 
-<form action="/action_page.php">
+      <body>
+         <h1 align="center" style="color:gray;">Firebase Login</h1>
+         <div id="firebaseui-auth-container"></div>
+      </body>
 
-Username: <input type="text" name="Username"  ><br>
-Password: <input type="password" name="PassWord" ><br>
-<div class="loginbutton"><input type="submit" value="Login"> </div>
-<p>
-
-  <a href= signup.html>Don't have an account? Click Here to Sign Up!</a>
-
-
-<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-
-  var config = {
-    apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
-    authDomain: "nosegoes-34831.firebaseapp.com",
-    databaseURL: "https://nosegoes-34831.firebaseio.com",
-    projectId: "nosegoes-34831",
-    storageBucket: "",
-    messagingSenderId: "837300799095"
-  };
-  firebase.initializeApp(config);
-</script>
 
 </body>
-
 </html>
