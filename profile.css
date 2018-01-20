@@ -1,3 +1,19 @@
+html {
+  background: url(https://www.google.com/search?q=white+background&rlz=1C5CHFA_enUS763US763&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiPy8zqsefYAhVKy1QKHfluCmcQ_AUICigB&biw=1280&bih=726#imgrc=J6I0vCLxeVVJuM:) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.center {
+    margin: auto;
+    width: 37%;
+    padding: 10px;
+}
+
+form{
+  text-align: center;
+  border-width: 0px;
+}
 .signup-w3ls {
  width: 50%;
  margin: 70px 25% 80%;
