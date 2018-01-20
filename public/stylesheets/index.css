@@ -1,0 +1,41 @@
+/* CSS for homefeed.html */
+.assigned_task {
+  width: 60%;
+
+  padding: 10px;
+  border: 3px solid black;
+  margin: 50px;
+  margin-top: 100px;
+  margin-left: 100px;
+  background-color: #FFFFA5;
+  position: relative;
+
+}
+
+ul.assigned_task_list {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 20px;
+  font-style:
+}
+
+.unassigned_task {
+  width: 60%;
+  padding: 10px;
+  border: 3px solid black;
+  margin: 50px;
+  margin-top: 100px;
+  margin-left: 75px;
+  background-color: #FFFFA5;
+  position: relative;
+}
+
+.col-1 {width: 50%;}
+
+.col-2 {width: 50%;}
+
+[class*="col-"] {
+    float: left;
+}
