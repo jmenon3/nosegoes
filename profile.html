@@ -54,9 +54,10 @@
     <div class="signup-agile1">
         <form action="#" method="post">
 
-          <button class="imgbutton" style='float:left; width:50%; '>
+            <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture/>
+          <button class="imgbutton" onclick= "document.getElementById('image')" style='float:left; width:50%; '>
             <img src="blank_profile.png"  width="400" height="400" />
-              <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture/>
+            
           </button>
 
             <div class="form-control">
@@ -74,7 +75,7 @@
                 <input type="email" id="contact_email" name="contact_email" placeholder="Contact Email" required="">
             </div>
 
-            <input type="submit" class="Edit" value="Edit">
+            <input type="submit" class="update" value="update">
         </form>
 
     </div>
