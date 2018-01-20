@@ -4,6 +4,12 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
 form{
   text-align: center;
   border-width: 0px;
