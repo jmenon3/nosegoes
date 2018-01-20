@@ -1,7 +1,7 @@
 html {
     background: #e6e9e9 no-repeat center center fixed;
     background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
-    -webkit-font-smoothing: antialiased; 
+    -webkit-font-smoothing: antialiased;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
