@@ -4,7 +4,11 @@
   <title>Signup</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< Updated upstream
   <link rel="stylesheet" href="houses.css">
+=======
+  <link rel="stylesheet" href="stylesheets/index.css">
+>>>>>>> Stashed changes
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -51,7 +55,11 @@
 </head>
 <body>
 
+<<<<<<< Updated upstream
    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+=======
+   <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+>>>>>>> Stashed changes
    <script type="text/javascript">
    (function(){
       var config = {
@@ -65,27 +73,17 @@
       firebase.initializeApp(config);
 
    //Realtime Authstate Listener
-
    firebase.auth().onAuthStateChanged(firebaseUser => {
        if(firebaseUser == null){
          window.location = 'login.html'
        }
    });
 
-   var user = firebase.auth().currentUser;
-   var name, email, uid;
-
-   if(user != null){
-      name = user.displayName;
-      email = user.email;
-      uid = user.uid;
-   }
-
-   document.get
-
    }());
 
    </script>
+
+   <script src="houses.js"></script>
 
 
    <nav class="navbar navbar-inverse">
@@ -204,5 +202,6 @@ window.onclick = function(event) {
 
 <!-- rishita was here!! -->
 
+ <script data-main="scripts/main" src="require.js"></script>
 </body>
 </html>
