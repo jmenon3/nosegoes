@@ -139,12 +139,6 @@
   <button type="button" style="width:87%" onclick="document.getElementById('id01').style.display='none';changedatabase(); " class="submit" >Done </button>
 
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 9d9df76acf53b06adc35afc024a7304ba6bb69cd
   <script>
   function changedatabase(){
       firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -172,16 +166,7 @@
 //
 //        }
 //      });
-<<<<<<< HEAD
-          var newHouseRef = firebaseref.child("Users").child(user.uid).child("Houses").push().set("True");
-          var houseID = newHouseRef.key;
-
-          firebaseref.child("Houses").child(houseID).child("members").put(user.uid, "creator");
-
-          firebaseref.updateCHildrenAsync(firebaseref);
-=======
           firebaseref.child("Users").child(user.uid).child("Houses").push().set("True");
->>>>>>> 9d9df76acf53b06adc35afc024a7304ba6bb69cd
           alert("hello we have submitted something");
 
         } else {
