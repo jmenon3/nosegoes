@@ -25,13 +25,6 @@
       height: 100%;
     }
 
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -97,51 +90,134 @@
 <div class="container-fluid text-center">
   <div class="col-sm-12 text-left">
     <div class="col-1">
-      <div class="plus_icon">
-        <input type="image" src="plus_icon.png" alt="Add Task" width="45" height="25">
+      <div class="dropdown" style="float:right;">
+        <button class="dropbtn">+</button>
+          <div class="dropdown-content">
+            <form action="/action_page.php">
+              Name: <input type="text" name="name" value="">
+              <br><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
       </div>
-      <div class="assigned_task">
-        <h1>
-          Assigned Tasks:
-        </h1>
-        <p>
-          <ul class="assigned_task_list">
-            <li> <b>Person 1:</b> Task 1-Description 1 Complete By: DD/MM/YYYY </li>
-            <li> <b>Person 2:</b> Task 2-Description 2 Complete By: DD/MM/YYYY </li>
-            <li> <b>Person 3:</b> Task 1-Description 3 Complete By: DD/MM/YYYY </li>
-            <li> <b>Person 4:</b> Task 1-Description 4 Complete By: DD/MM/YYYY </li>
-            <li> <b>Person 5:</b> Task 1-Description 5 Complete By: DD/MM/YYYY </li>
-          </ul>
-        </p>
+      <div class="members-list">
+        <h1>Members:</h1>
+        <ul class="list-unstyled">
+          <li onclick="location.href='http://example';"> Member1 </li>
+          <li onclick="location.href='http://example';"> Member2 </li>
+          <li onclick="location.href='http://example';"> Member3 </li>
+          <li onclick="location.href='http://example';"> Member4 </li>
+        </ul>
       </div>
     </div>
 
     <div class="col-2">
-      <div class="plus_icon">
-        <input type="image" src="plus_icon.png" alt="Add Task" width="45" height="25">
+      <div class="dropdown" style="float:right;">
+        <button class="dropbtn">+</button>
+          <div class="dropdown-content">
+            <form action="/action_page.php">
+              Name:<br> <input type="text" name="name" value="">
+              <br>
+              Task:<br> <input type="text" task="task" value="">
+              <br>
+              Points:<br> <input type="text" points="points" value="">
+              <br><br>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
       </div>
-      <div class="unassigned_task">
+      <div class="assigned-task">
         <h1>
-          Unassigned Tasks:
+          Assigned Tasks:
         </h1>
-        <p>
-          <ul class="assigned_task_list">
-            <li> <b>Person 1:</b> Task 1-Description 1 Complete By: DD/MM/YYYY </li>
-            <li> <b>Person 2:</b> Task 2-Description 2 Complete By: DD/MM/YYYY </li>
-            <li> <b>Person 3:</b> Task 1-Description 3 Complete By: DD/MM/YYYY </li>
-            <li> <b>Person 4:</b> Task 1-Description 4 Complete By: DD/MM/YYYY </li>
-            <li> <b>Person 5:</b> Task 1-Description 5 Complete By: DD/MM/YYYY </li>
-          </ul>
-        </p>
+
+        <div class="text-row">
+
+          <div class="text-column">
+            <h2>Name</h2>
+              <ul class="list-unstyled">
+                <li> Person 1 </li>
+                <li> Person 2 </li>
+                <li> Person 3 </li>
+              </ul>
+          </div>
+
+          <div class="text-column">
+            <h2>Task</h2>
+              <ul class="list-unstyled">
+                <li> Task 1 </li>
+                <li> Task 2 </li>
+                <li> Task 3 </li>
+              <ul class="list-unstyled">
+          </div>
+
+          <div class="text-column">
+            <h2>Points</h2>
+              <ul class="list-unstyled">
+                <li> ###</li>
+                <li> ### </li>
+                <li> ### </li>
+              <ul class="list-unstyled">
+          </div>
+
+        </div>
       </div>
     </div>
+
+      <div class="col-3">
+        <div class="dropdown" style="float:right;">
+          <button class="dropbtn">+</button>
+            <div class="dropdown-content">
+              <form action="/action_page.php">
+                Name:<br> <input type="text" name="name" value="">
+                <br>
+                Task:<br> <input type="text" task="task" value="">
+                <br>
+                Points:<br> <input type="text" points="points" value="">
+                <br><br>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+        </div>
+        <div class="unassigned-task">
+          <h1>
+            Unassigned Tasks:
+          </h1>
+
+          <div class="text-row">
+            <div class="text-column">
+              <h2>Name</h2>
+                <ul class="list-unstyled">
+                  <li> Person 1 </li>
+                  <li> Person 2 </li>
+                  <li> Person 3 </li>
+                </ul>
+            </div>
+
+            <div class="text-column">
+              <h2>Task</h2>
+                <ul class="list-unstyled">
+                  <li> Task 1 </li>
+                  <li> Task 2 </li>
+                  <li> Task 3 </li>
+                <ul class="list-unstyled">
+            </div>
+
+            <div class="text-column">
+              <h2>Points</h2>
+                <ul class="list-unstyled">
+                  <li> ###</li>
+                  <li> ### </li>
+                  <li> ### </li>
+                <ul class="list-unstyled">
+            </div>
+
+          </div>
+        </div>
+
   </div>
   </div>
 
-
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
 
 </body>
 </html>
