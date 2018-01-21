@@ -18,6 +18,7 @@ form{
 .imgbutton{
   min-width:  = 100px;
   color: white;
+  border-width: 0px;
   background-color: DarkBlue;
 }
 
