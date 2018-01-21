@@ -1,0 +1,140 @@
+/* CSS for index.html */
+
+* {
+    box-sizing: border-box;
+}
+
+.members-list {
+  width: 85%;
+  padding: 15px;
+  border: 3px solid black;
+  margin: 25px;
+  margin-top: 100px;
+  background-color: #FFFFA5;
+  position: relative;
+  font-size: 16px;
+  height: 400px;
+}
+
+.members-list li {
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.assigned-task {
+  width: 85%;
+  padding: 15px;
+  border: 3px solid black;
+  margin: 25px;
+  margin-top: 100px;
+  background-color: #FFFFA5;
+  position: relative;
+  font-size: 16px;
+  height: 400px;
+}
+
+.assigned-task li {
+  padding: 10px;
+}
+
+.unassigned-task {
+  width: 85%;
+  padding: 15px;
+  border: 3px solid black;
+  margin: 25px;
+  margin-top: 100px;
+  background-color: #FFFFA5;
+  position: relative;
+  font-size: 16px;
+  height: 400px;
+}
+
+
+.unassigned-task li {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Lucida Bright", Georgia, serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+}
+
+
+.col-1 {width: 33%;
+}
+.col-2 {width: 33%;}
+
+.col-3 {width: 33%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+@media (max-width:600px) {
+    .text-column {
+        width: 100%;
+    }
+}
+
+.text-column {
+  float: left;
+  width: 33.3%;
+  padding: 15px;
+}
+
+.text-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    border: none;
+    margin-top: 200%;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 15px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
