@@ -4,17 +4,24 @@
   <title>NoseGoes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="indexcss.css">
+  <link rel="stylesheet" href="stylesheets/indexcss.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
-    
     .navbar {
+      background-color: transparent;
       margin-bottom: 0;
-      border-radius: 0;
+      border: none;
+
+
     }
+    a:hover,.navbar-nav>.active > a{ color: orange !important;
+                      background: white !important; }
+    .navbar-nav>.active > a{ color: LightBlue !important;
+                            background: white !important; }
+
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
@@ -69,7 +76,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -86,15 +92,8 @@
 </nav>
 
 <div class="container-fluid text-center">
-  <div class="row content">
-    <div class="col-sm-12 text-left">
-      <h1>NoseGoes</h1>
-      <p>Hard to organize tasks amongst your housemates? Join us in our adventure as we help you assign tasks to your housemates, and make sure your friends do what they are supposed to! Don't take us too lightly now, we will embrass you if you don't do your work.
-      </p>
-      <hr>
-
       <body>
-         <h1 align="center" style="color:gray;">Firebase Login</h1>
+         <center><img src="nosegoes-logo.png" width= "27%" height= "27%" alt="Profile image example"/></center>
          <div id="firebaseui-auth-container"></div>
       </body>
 
