@@ -64,29 +64,33 @@ body {
 }
 
 h1 {
-    color: white;
+    color: gray;
 }
 
 p {
-  color: white;
+  color: gray;
 }
 
 .jyu {
-  color: white;
+  color: gray;
 }
 
 .jwu {
-  color: white;
+  color: gray;
 }
 
-.jay {
-  color: white;
+.jay { s
+  color: gray;
 }
 
 .josh {
-  color: white;
+  color: gray;
 }
 
 .rishita {
-  color: white;
+  color: gray;
+}
+
+.img-circle {
+    border-radius: 50%;
 }
