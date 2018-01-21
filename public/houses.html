@@ -4,7 +4,6 @@
   <title>Signup</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="indexcss.css">
   <link rel="stylesheet" href="houses.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -128,11 +127,11 @@
     <div class="container">
       <label><b>Name of your house</b></label>
       <p></p>
-      <input type="text" placeholder="House name" style="width: 87%;" required></input>
+      <input type="text" placeholder="House name" style="width: 87%;" ></input>
       <p></p>
       <label><b>People to include</b></label>
       <p></p>
-      <input type="text" placeholder="emails" style="width: 87%;" required></input>
+      <input type="text" placeholder="emails" style="width: 87%;" ></input>
       <button type="button" style="width:87%" onclick="document.getElementById('id01').style.display='none';changedatabase()" class="submit" >Done</button>
 
   
@@ -158,14 +157,14 @@
 //          firebaseref.child("Users").child(user.uid).child("Points").set("0");    
 //
 //        }
-//      }); 
+//      });   
 //          firebaseref.child("Users").child("Houses").once('value', function(snapshot) {
 //        if (!snapshot.hasChild("Houses")) {
 //          window.location = 'houses.html'
 //
 //        }
 //      }); 
-
+          alert("hello");
           firebaseref.child("Users").child(user.uid).child("Houses").child("0").set("True");
           window.location = 'index.html'
         } else {
