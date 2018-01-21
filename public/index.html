@@ -37,6 +37,7 @@
 </head>
 <body>
 
+   <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
    <script type="text/javascript">
    (function(){
       var config = {
@@ -56,6 +57,14 @@
          window.location = 'login.html'
        }
    });
+
+   var ref = new Firebase('https://nosegoes-34831.firebaseio.com');
+   var authData = ref.getAuth();
+
+   if (authData){
+      console.log("uid: ", authData.uid);
+   }
+
 
    }());
 
