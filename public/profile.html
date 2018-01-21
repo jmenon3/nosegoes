@@ -4,6 +4,7 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="profilecss.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -96,8 +97,51 @@ background-size: cover;
   <center><img src="blank_profile.png" class="img-circle" alt="Bird" width="30%" height="30%"></center>
 
   <center>
-    <h3>John Doe</h3>
-    <button style="float:right">Update Profile</button>
+    <h3 id="mainname">John Doe</h3>
+    <button onclick="document.getElementById('id01').style.display='block'" style="float:right">Update Profile</button>
+    <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="uname">
+
+
+      <label><b>Contacts</b></label>
+      <input type="text" placeholder="Enter Name of Contact" name="contactname" >
+        
+      <button type="submit" onclick="changeText()" href = "profile.html">Update</button>
+      <label>
+        <input type="checkbox" checked="checked"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+  
+function changeText()
+{
+ document.getElementById('mainname').innerHTML = "Changed";
+ document.getElementById('maincontacts').innerHTML = "Changed";
+
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
   </center>
 </div>
 
@@ -109,6 +153,7 @@ background-size: cover;
 <div class="container-fluid bg-3 text-center">
   <h3>Where To Find Me?</h3>
   <p>Contacts:</p>
+  <p id="maincontacts"></p>
 </div>
 
 
