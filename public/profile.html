@@ -76,6 +76,11 @@ background-size: cover;
             <img src="user.png" height="25px" border="0">
           </a>
       </li>
+      <li>
+      <a href="houses.html">
+           <img src="pluss.png" height="25px" margin-top="10px">
+         </a>
+       </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
@@ -100,7 +105,7 @@ background-size: cover;
     <h3 id="mainname">John Doe</h3>
     <button onclick="document.getElementById('id01').style.display='block'" style="float:right">Update Profile</button>
     <div id="id01" class="modal">
-  
+
   <form class="modal-content animate" action="/action_page.php">
 
     <div class="container">
@@ -110,7 +115,7 @@ background-size: cover;
 
       <label><b>Contacts</b></label>
       <input type="text" placeholder="Enter Name of Contact" name="contactname" >
-        
+
       <button type="submit" onclick="changeText()" href = "profile.html">Update</button>
       <label>
         <input type="checkbox" checked="checked"> Remember me
@@ -127,7 +132,7 @@ background-size: cover;
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
-  
+
 function changeText()
 {
  document.getElementById('mainname').innerHTML = "Changed";
