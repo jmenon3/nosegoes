@@ -1,5 +1,5 @@
 html {
-  background: url(https://www.google.com/search?q=white+background&rlz=1C5CHFA_enUS763US763&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiPy8zqsefYAhVKy1QKHfluCmcQ_AUICigB&biw=1280&bih=726#imgrc=J6I0vCLxeVVJuM:) no-repeat center center fixed;
+  background: white;
   background-size: cover;
   height: 100%;
   overflow: hidden;
@@ -15,12 +15,14 @@ form{
   border-width: 0px;
 }
 
-.imgbutton{
-  min-width:  = 100px;
+.image{
+  width: auto;
+  height: auto;
+  min-width: = 100px;
   color: white;
   border-width: none;
   border: none;
-
-  background-color: DarkBlue;
-
+}
+.img-circle {
+    border-radius: 50%;
 }

@@ -13,6 +13,11 @@
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+      font-family: Arial;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+        background-color: blue;
     }
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -62,30 +67,32 @@
    </script>
 
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Logo</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <div class "topnav_homefeed">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="">Home</a></li>
-        <li><a href="#">Notifactions</a></li>
-        <li><a href="profile.html">Profile</a></li>
-      </ul>
-    </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+   <nav class="navbar navbar-inverse">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <a class="navbar-brand" href="#">Dashboard</a>
+       </div>
+       <ul class="nav navbar-nav">
+         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Houses <span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="#">House 1</a></li>
+             <li><a href="#">House 2</a></li>
+           </ul>
+         </li>
+         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Notifications <span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="#">Notification 1</a></li>
+             <li><a href="#">Notification 2</a></li>
+             <li><a href="#">Notification 3</a></li>
+           </ul>
+         </li>
+         <li><a href="profile.html">Profile</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right">
+         <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
+       </ul>
+     </div>
+   </nav>
 
 <div class="container-fluid text-center">
   <div class="col-sm-12 text-left">
