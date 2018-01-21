@@ -18,8 +18,9 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 }); 
     firebaseref.child("Users").child("Houses").once('value', function(snapshot) {
+      alert(!snapshot.hasChild("Houses"));
   if (!snapshot.hasChild("Houses")) {
-    window.location = 'houses.html'
+    //window.location = 'houses.html'
 
   }
 }); 
