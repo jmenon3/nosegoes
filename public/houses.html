@@ -4,11 +4,7 @@
   <title>Signup</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< Updated upstream
   <link rel="stylesheet" href="houses.css">
-=======
-  <link rel="stylesheet" href="stylesheets/index.css">
->>>>>>> Stashed changes
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -55,11 +51,7 @@
 </head>
 <body>
 
-<<<<<<< Updated upstream
-   <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-=======
    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
->>>>>>> Stashed changes
    <script type="text/javascript">
    (function(){
       var config = {
@@ -133,9 +125,9 @@
       <input type="text" placeholder="emails" style="width: 87%;" ></input>
   <button type="button" style="width:87%" onclick="document.getElementById('id01').style.display='none';changedatabase(); " class="submit" Done </a></button>
 
-  
-  
-  
+
+
+
   <script>
   function changedatabase(){
       firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -153,17 +145,22 @@
 //        if (!snapshot.hasChild(user.uid)) {
 //          firebaseref.child("Users").child(user.uid).child("Email").set(user.email);
 //          firebaseref.child("Users").child(user.uid).child("Name").set(user.displayName);
-//          firebaseref.child("Users").child(user.uid).child("Points").set("0");    
+//          firebaseref.child("Users").child(user.uid).child("Points").set("0");
 //
 //        }
-//      });   
+//      });
 //          firebaseref.child("Users").child("Houses").once('value', function(snapshot) {
 //        if (!snapshot.hasChild("Houses")) {
 //          window.location = 'houses.html'
 //
 //        }
-//      }); 
-          firebaseref.child("Users").child(user.uid).child("Houses").push().set("True");
+//      });
+          var newHouseRef = firebaseref.child("Users").child(user.uid).child("Houses").push().set("True");
+          var houseID = newHouseRef.key;
+
+          firebaseref.child("Houses").child(houseID).child("members").put(user.uid, "creator");
+
+          firebaseref.updateCHildrenAsync(firebaseref);
           alert("hello we have submitted something");
 
         } else {
@@ -174,13 +171,13 @@
       }
   </script>
 
-  <script> 
+  <script>
   function changewindows(){
     window.location = 'index.html'
   }
-  </script>  
-  
-  
+  </script>
+
+
     </div>
     <div class="container" style="background-color:#f1f1f1 width:20%">
      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
