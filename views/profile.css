@@ -20,7 +20,8 @@ form{
   height: 150px;
   width: 150px;
   color: white;
-  border-width: 0px;
+  border-width: none;
+  border: none;
 
   background-color: DarkBlue;
 
