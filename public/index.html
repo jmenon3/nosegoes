@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="stylesheets/index.css">
   <style>
   html {
@@ -38,11 +39,17 @@
         height: auto;
         padding: 15px;
       }
+      .column {
+        width: auto !important;
+        float: none !important;
+        display: block !important;
+    }
       .row.content {height:auto;}
     }
   </style>
 </head>
 <body>
+
 
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 <script>
@@ -75,36 +82,51 @@
 
 </script>
 
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html">
+          <img src="nosegoes-logo-wht.png" alt="Go to W3Schools!" height="55px" border="0">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="home-interface.png" alt="Go to W3Schools!" height="25px" border="0"></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">House 1</a></li>
+            <li><a href="#">House 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="notification.png" alt="Go to W3Schools!" height="25px" border="0"></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Notification 1</a></li>
+            <li><a href="#">Notification 2</a></li>
+            <li><a href="#">Notification 2</a></li>
+          </ul>
+        </li>
+        <li> <a href="profile.html">
+              <img src="user.png" height="25px" border="0">
+            </a>
+        </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <img src="nosegoes-logo-wht.png" height="52px"/>
-      <a class="navbar-brand" href="#"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <div class "topnav_homefeed">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="">Home</a></li>
-        <li><a href="#">Notifactions</a></li>
-        <li><a href="profile.html">Profile</a></li>
-      </ul>
-    </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li id="sign-out"><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+<div class="row">
 <div class="container-fluid text-center">
   <div class="col-sm-12 text-left">
-    <div class="col-1">
+    <table class="col-1">
       <div class="dropdown" style="float:right;">
         <button class="dropbtn">+</button>
           <div class="dropdown-content">
@@ -124,9 +146,9 @@
           <li onclick="location.href='http://example';"> Member4 </li>
         </ul>
       </div>
-    </div>
+    </table>
 
-    <div class="col-2">
+    <table class="col-2">
       <div class="dropdown" style="float:right;">
         <button class="dropbtn">+</button>
           <div class="dropdown-content">
@@ -177,9 +199,9 @@
 
         </div>
       </div>
-    </div>
+    </table>
 
-      <div class="col-3">
+      <table class="col-3">
         <div class="dropdown" style="float:right;">
           <button class="dropbtn">+</button>
             <div class="dropdown-content">
@@ -230,8 +252,11 @@
           </div>
         </div>
 
+      </table>
   </div>
-  </div>
+</div>
+</div>
+
 
 
 </body>

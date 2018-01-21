@@ -10,6 +10,13 @@
 </head>
 
 <style>
+html {
+background: url(asdf.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
   /* Remove the navbar's default margin-bottom and rounded borders */
   .navbar {
     margin-bottom: 0;
@@ -18,12 +25,22 @@
 
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
   .row.content {height: 450px}
-  /* On small screens, set height to 'auto' for sidenav and grid */
 
-  @media screen and (max-width: 767px) {
-    .row.content {height:auto;}
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
   }
 
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto;}
+  }
 </style>
 
 <body>
@@ -35,24 +52,29 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Dashboard</a>
+      <a href="index.html">
+        <img src="nosegoes-logo-wht.png" alt="Go to W3Schools!" height="55px" border="0">
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Houses <span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="home-interface.png" alt="Go to W3Schools!" height="25px" border="0"></a>
         <ul class="dropdown-menu">
           <li><a href="#">House 1</a></li>
           <li><a href="#">House 2</a></li>
         </ul>
       </li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Notifications <span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="notification.png" alt="Go to W3Schools!" height="25px" border="0"></a>
         <ul class="dropdown-menu">
           <li><a href="#">Notification 1</a></li>
           <li><a href="#">Notification 2</a></li>
-          <li><a href="#">Notification 3</a></li>
+          <li><a href="#">Notification 2</a></li>
         </ul>
       </li>
-      <li><a href="#">Profile</a></li>
+      <li> <a href="">
+            <img src="user.png" height="25px" border="0">
+          </a>
+      </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
