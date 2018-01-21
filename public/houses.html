@@ -119,33 +119,29 @@
 
 
     <div class="col-sm-12 text-left">
-          <h1>Not in a house yet! Choose a house here by clicking the "+" sign!</h1>
-
-
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          <center><h1>Not in a house yet! Click the house to start!</h1></center>
+          <a onclick="document.getElementById('id01').style.display='block'">
+            <center><img src="house.png" alt="Go to W3Schools!" height="400px" border="0"></center>
+          </a>
 
 <div id="id01" class="modal">
-  
+
   <form class="modal-content animate" action="/action_page.php">
-
     <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label><b>Name of your house</b></label>
+      <p></p>
+      <input type="text" placeholder="House name" style="width: 87%;" required></input>
+      <p></p>
+      <label><b>People to include</b></label>
+      <p></p>
+      <input type="text" placeholder="emails" style="width: 87%;" required></input>
+      <button type="button" style="width:87%" onclick="document.getElementById('id01').style.display='none'" class="submit">Done</button>
 
 
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked"> Remember me
-      </label>
     </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+    <div class="container" style="background-color:#f1f1f1 width:20%">
+     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+   </div>
   </form>
 </div>
 
