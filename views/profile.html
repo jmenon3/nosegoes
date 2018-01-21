@@ -50,11 +50,36 @@
     </div>
   </nav>
 
-<div class="edit_profile">
+<div class="signup-w3ls">
+    <div class="signup-agile1">
+        <form action="#" method="post">
 
-  <button class="imgeButton" style="imgbutton" width:50%; >
-    <img src="blank_profile.png"  width="400" height="400" />
-  </button>
+          <button class="imgbutton" style='float:left; width:50%; '>
+            <img src="blank_profile.png"  width="400" height="400" />
+          </button>
 
+          <img src='temp.png' id='img1' name='img1'>
+          <select name="users" onchange="show(this.value);SwitchPic(img1);"> </select>
+          <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+
+            <div class="form-control">
+                <label class="header">Name :</label>
+                <input type="text" id="store_name" name="store_name" placeholder="Name" title="Please enter your Name" required="">
+            </div>
+
+            <div class="form-control">
+                <label class="header">Contact Number :</label>
+                <input type="text" id="contact_number" name="contact_number" placeholder="Contact Number" required="">
+            </div>
+
+            <div class="form-control">
+                <label class="header">Contact Email :</label>
+                <input type="email" id="contact_email" name="contact_email" placeholder="Contact Email" required="">
+            </div>
+
+            <input type="submit" class="Edit" value="Edit">
+        </form>
+
+    </div>
 </div>
 </div>
