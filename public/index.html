@@ -9,6 +9,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="stylesheets/index.css">
   <style>
+  html {
+    background: url(asdf.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
@@ -37,6 +44,31 @@
 </head>
 <body>
 
+<<<<<<< HEAD
+   <script type="text/javascript">
+   (function(){
+      var config = {
+        apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
+        authDomain: "nosegoes-34831.firebaseapp.com",
+        databaseURL: "https://nosegoes-34831.firebaseio.com",
+        projectId: "nosegoes-34831",
+        storageBucket: "",
+        messagingSenderId: "837300799095"
+      };
+      firebase.initializeApp(config);
+
+   //Realtime Authstate Listener
+
+   firebase.auth().onAuthStateChanged(firebaseUser => {
+       if(firebaseUser == null){
+         window.location = 'login.html'
+       }
+   });
+
+   }());
+
+   </script>
+=======
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -52,6 +84,7 @@
 </script>
 
   <script src = "index.js"></script>
+>>>>>>> master
 
   <script>
       document.getElementById("sign-out").onclick = function() {authsignout()};
@@ -221,6 +254,7 @@
 
   </div>
   </div>
+
 
 
 </body>
