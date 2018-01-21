@@ -44,6 +44,45 @@
 </head>
 <body>
 
+   <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
+
+   <script type="text/javascript">
+   (function(){
+      var config = {
+        apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
+        authDomain: "nosegoes-34831.firebaseapp.com",
+        databaseURL: "https://nosegoes-34831.firebaseio.com",
+        projectId: "nosegoes-34831",
+        storageBucket: "",
+        messagingSenderId: "837300799095"
+      };
+      firebase.initializeApp(config);
+
+   //Realtime Authstate Listener
+
+   firebase.auth().onAuthStateChanged(firebaseUser => {
+       if(firebaseUser == null){
+         window.location = 'login.html'
+       }
+   });
+
+   var user = firebase.auth().currentUser;
+   var name, email, uid;
+
+   if(user != null){
+      name = user.displayName;
+      email = user.email;
+      uid = user.uid;
+   }
+
+   document.get
+
+   }());
+
+   </script>
+
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">

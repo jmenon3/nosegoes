@@ -66,6 +66,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
       window.location = 'login.html'
     }
 });
+
 }());
 
 </script>
@@ -106,6 +107,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
           Assigned Tasks:
         </h1>
         <p>
+           <p id="name"></p>
           <ul class="assigned_task_list">
             <li> <b>Person 1:</b> Task 1-Description 1 Complete By: DD/MM/YYYY </li>
             <li> <b>Person 2:</b> Task 2-Description 2 Complete By: DD/MM/YYYY </li>
@@ -114,6 +116,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
             <li> <b>Person 5:</b> Task 1-Description 5 Complete By: DD/MM/YYYY </li>
           </ul>
         </p>
+
       </div>
     </div>
 

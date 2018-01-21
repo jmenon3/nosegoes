@@ -44,6 +44,31 @@
 </head>
 <body>
 
+   <script type="text/javascript">
+   (function(){
+      var config = {
+        apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
+        authDomain: "nosegoes-34831.firebaseapp.com",
+        databaseURL: "https://nosegoes-34831.firebaseio.com",
+        projectId: "nosegoes-34831",
+        storageBucket: "",
+        messagingSenderId: "837300799095"
+      };
+      firebase.initializeApp(config);
+
+   //Realtime Authstate Listener
+
+   firebase.auth().onAuthStateChanged(firebaseUser => {
+       if(firebaseUser == null){
+         window.location = 'login.html'
+       }
+   });
+
+   }());
+
+   </script>
+
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
