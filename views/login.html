@@ -15,11 +15,13 @@
       margin-bottom: 0;
       border: none;
 
+
     }
-    a:hover { color: orange !important; }
-    a:active{
-      background: white;
-    }
+    a:hover,.navbar-nav>.active > a{ color: #ed8924 !important;
+                      background: white !important; }
+
+    .navbar-nav>.active > a{ color: #99c1ce !important;
+                            background: white !important; }
 
 
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -75,7 +77,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
