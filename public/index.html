@@ -44,30 +44,6 @@
 </head>
 <body>
 
-   <script type="text/javascript">
-   (function(){
-      var config = {
-        apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
-        authDomain: "nosegoes-34831.firebaseapp.com",
-        databaseURL: "https://nosegoes-34831.firebaseio.com",
-        projectId: "nosegoes-34831",
-        storageBucket: "",
-        messagingSenderId: "837300799095"
-      };
-      firebase.initializeApp(config);
-
-   //Realtime Authstate Listener
-
-   firebase.auth().onAuthStateChanged(firebaseUser => {
-       if(firebaseUser == null){
-         window.location = 'login.html'
-       }
-   });
-
-   }());
-
-   </script>
-
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -85,9 +61,21 @@
   <script src = "index.js"></script>
 
 
-  <script>
-      document.getElementById("sign-out").onclick = function() {authsignout()};
+<script type="text/javascript">
+  (function(){
+     var config = {
+       apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
+       authDomain: "nosegoes-34831.firebaseapp.com",
+       databaseURL: "https://nosegoes-34831.firebaseio.com",
+       projectId: "nosegoes-34831",
+       storageBucket: "",
+       messagingSenderId: "837300799095"
+     };
+     firebase.initializeApp(config);
 
+  }());
+
+<<<<<<< HEAD
       function authsignout() {
             firebase.auth().signOut().then(function() {
                console.log('Signed Out');
@@ -96,6 +84,9 @@
             });
       };
   </script>
+
+</script>
+
 
 
 <nav class="navbar navbar-inverse">
@@ -112,7 +103,7 @@
       <div class "topnav_homefeed">
       <ul class="nav navbar-nav">
         <li class="active"><a href="">Home</a></li>
-        <li><a href="#">Notifactions</a></li>
+        <li><a href="#">Notifications</a></li>
         <li><a href="profile.html">Profile</a></li>
       </ul>
     </div>
@@ -253,7 +244,6 @@
 
   </div>
   </div>
-
 
 
 </body>
