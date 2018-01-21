@@ -8,7 +8,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     firebaseref.child("Users").child(user.uid).child("Email").set(user.email); 
     firebaseref.child("Users").child(user.uid).child("Name").set(user.displayName);    
     firebaseref.child("Users").child(user.uid).child("Houses").set("None");    
-    firebaseref.child("Users").child(user.uid).child("Points").set("1");
+    firebaseref.child("Users").child(user.uid).child("Points").set("0");
   }
 });
     
