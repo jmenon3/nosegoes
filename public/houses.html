@@ -135,9 +135,7 @@
       <input type="text" placeholder="emails" style="width: 87%;" ></input>
   <button type="button" style="width:87%" onclick="document.getElementById('id01').style.display='none';changedatabase(); " class="submit" >Done </button>
 
-  
-  
-  
+
   <script>
   function changedatabase(){
       firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -155,16 +153,16 @@
 //        if (!snapshot.hasChild(user.uid)) {
 //          firebaseref.child("Users").child(user.uid).child("Email").set(user.email);
 //          firebaseref.child("Users").child(user.uid).child("Name").set(user.displayName);
-//          firebaseref.child("Users").child(user.uid).child("Points").set("0");    
+//          firebaseref.child("Users").child(user.uid).child("Points").set("0");
 //
 //        }
-//      });   
+//      });
 //          firebaseref.child("Users").child("Houses").once('value', function(snapshot) {
 //        if (!snapshot.hasChild("Houses")) {
 //          window.location = 'houses.html'
 //
 //        }
-//      }); 
+//      });
           firebaseref.child("Users").child(user.uid).child("Houses").push().set("True");
           alert("hello we have submitted something");
 
@@ -176,13 +174,13 @@
       }
   </script>
 
-  <script> 
+  <script>
   function changewindows(){
     window.location = 'index.html'
   }
-  </script>  
-  
-  
+  </script>
+
+
     </div>
     <div class="container" style="background-color:#f1f1f1 width:20%">
      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
