@@ -16,11 +16,14 @@ form{
 }
 
 .imgbutton{
-  min-width:  = 100px;
+  min-width: = 100px;
   color: white;
   border-width: none;
   border: none;
 
   background-color: DarkBlue;
 
+}
+.img-circle {
+    border-radius: 50%;
 }
