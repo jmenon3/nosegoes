@@ -1,9 +1,4 @@
-html {
-  background: url(https://www.google.com/search?q=white+background&rlz=1C5CHFA_enUS763US763&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiPy8zqsefYAhVKy1QKHfluCmcQ_AUICigB&biw=1280&bih=726#imgrc=J6I0vCLxeVVJuM:) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
+
 .center {
     margin: auto;
     width: 37%;
@@ -22,4 +17,15 @@ input{
   min-width:  = 100px;
   color: white;
   background-color: DarkBlue;
+}
+
+body {
+    background: url("asdf.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: sans-serif;
+
+
 }
