@@ -17,8 +17,11 @@ form{
 
 .imgbutton{
   min-width:  = 100px;
+  height: 150px;
+  width: 150px;
   color: white;
   border-width: 0px;
+
   background-color: DarkBlue;
 
 }
