@@ -120,6 +120,7 @@
           <a onclick="document.getElementById('id01').style.display='block'">
             <center><img src="house.png" alt="Go to W3Schools!" height="400px" border="0"></center>
           </a>
+      <center><button type="button" style="width:87%" onclick="changewindows(); " class="submit" <a href='index.html'> Go to Tasks </a></button></center>
 
 <div id="id01" class="modal">
 
@@ -132,7 +133,7 @@
       <label><b>People to include</b></label>
       <p></p>
       <input type="text" placeholder="emails" style="width: 87%;" ></input>
-      <button type="button" style="width:87%" onclick="document.getElementById('id01').style.display='none';changedatabase()" class="submit" >Done</button>
+  <button type="button" style="width:87%" onclick="document.getElementById('id01').style.display='none';changedatabase(); " class="submit" Done </a></button>
 
   
   
@@ -164,9 +165,9 @@
 //
 //        }
 //      }); 
-          alert("hello");
-          firebaseref.child("Users").child(user.uid).child("Houses").child("0").set("True");
-          window.location = 'index.html'
+          firebaseref.child("Users").child(user.uid).child("Houses").push().set("True");
+          alert("hello we have submitted something");
+
         } else {
           // alert("nahh");
           window.location = 'login.html'
@@ -174,8 +175,12 @@
       });
       }
   </script>
-  
-  
+
+  <script> 
+  function changewindows(){
+    window.location = 'index.html'
+  }
+  </script>  
   
   
     </div>
