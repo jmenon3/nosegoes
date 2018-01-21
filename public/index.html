@@ -50,8 +50,20 @@
   };
   firebase.initializeApp(config);
 </script>
-  
+
   <script src = "index.js"></script>
+
+  <script>
+      document.getElementById("sign-out").onclick = function() {authsignout()};
+
+      function authsignout() {
+            firebase.auth().signOut().then(function() {
+               console.log('Signed Out');
+            }, function(error) {
+               console.error('Sign Out Error', error);
+            });
+      };
+  </script>
 
 
 <nav class="navbar navbar-inverse">
@@ -73,7 +85,7 @@
       </ul>
     </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
+        <li id="sign-out"><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
       </ul>
     </div>
   </div>
