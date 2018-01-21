@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>NoesGoes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="stylesheets/index.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
@@ -36,6 +36,31 @@
   </style>
 </head>
 <body>
+
+   <script type="text/javascript">
+   (function(){
+      var config = {
+        apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
+        authDomain: "nosegoes-34831.firebaseapp.com",
+        databaseURL: "https://nosegoes-34831.firebaseio.com",
+        projectId: "nosegoes-34831",
+        storageBucket: "",
+        messagingSenderId: "837300799095"
+      };
+      firebase.initializeApp(config);
+
+   //Realtime Authstate Listener
+
+   firebase.auth().onAuthStateChanged(firebaseUser => {
+       if(firebaseUser == null){
+         window.location = 'login.html'
+       }
+   });
+
+   }());
+
+   </script>
+
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">

@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="indexcss.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -45,6 +44,45 @@
 </head>
 <body>
 
+   <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
+
+   <script type="text/javascript">
+   (function(){
+      var config = {
+        apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
+        authDomain: "nosegoes-34831.firebaseapp.com",
+        databaseURL: "https://nosegoes-34831.firebaseio.com",
+        projectId: "nosegoes-34831",
+        storageBucket: "",
+        messagingSenderId: "837300799095"
+      };
+      firebase.initializeApp(config);
+
+   //Realtime Authstate Listener
+
+   firebase.auth().onAuthStateChanged(firebaseUser => {
+       if(firebaseUser == null){
+         window.location = 'login.html'
+       }
+   });
+
+   var user = firebase.auth().currentUser;
+   var name, email, uid;
+
+   if(user != null){
+      name = user.displayName;
+      email = user.email;
+      uid = user.uid;
+   }
+
+   document.get
+
+   }());
+
+   </script>
+
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -74,48 +112,23 @@
 
 
     <div class="col-sm-12 text-left">
-          <h1>Join our Army!</h1>
+          <h1>Not in a house yet!, choose a house here!</h1>
 
       <hr>
 <div class="mainform">
 <form action="/action_page.php">
-    <div class = "col-sm-5 text-left"></div>
-  <div class = "col-sm-1 text-left">Email: </div> <div class = "col-sm-6 text-left"> <input type="text" name="email"  ><br> </div>
-  <div class = "col-sm-5 text-left"></div>
-  <div class = "col-sm-1 text-left">Username: </div> <div class = "col-sm-6 text-left"> <input type="text" name="Username1"  ><br> </div>
-  <div class = "col-sm-5 text-left"></div>
-  <div class = "col-sm-1 text-left">Password: </div> <div class = "col-sm-6 text-left"> <input type="password" name="password2"  ><br> </div>
-    <div class = "col-sm-5 text-left"></div>
-  <div class = "col-sm-1 text-left">Enter Password again: </div> <div class = "col-sm-6 text-left"> <input type="password" name="Password2"  ><br> </div>
 
-<div class = "col-sm-3 text-left"></div>
-<div class = "col-sm-4 text-left"><div class="loginbutton"><input type="submit" value="SignUp"> </div>
-<p>
-  <a href= index.html >Remember your account? Go back to Login</a> </div>
-
-</form>
-      </div>
+<a href="index.html"><img src= "http://weknowyourdreams.com/images/house/house-07.jpg" width= "300" height = "400">
+  <div class="plus_icon">
+    <input type="image" src="plus_icon.png" alt="Add Task" width="45" height="25">
+  </div>
 
     </div>
 
   </div>
 </div>
 
-<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-
-  var config = {
-    apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
-    authDomain: "nosegoes-34831.firebaseapp.com",
-    databaseURL: "https://nosegoes-34831.firebaseio.com",
-    projectId: "nosegoes-34831",
-    storageBucket: "",
-    messagingSenderId: "837300799095"
-  };
-  firebase.initializeApp(config);
-
-</script>
+<!-- rishita was here!! -->
 
 </body>
 </html>

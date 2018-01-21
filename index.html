@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>NoesGoes</title>
+  <title>NoseGoes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="stylesheet" href="index.css">
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
@@ -44,33 +44,6 @@
 </head>
 <body>
 
-<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
-
-<script type="text/javascript">
-(function(){
-   var config = {
-     apiKey: "AIzaSyCzu-xeBz0BbR0lqy_LFWxrQFVdqxhKa88",
-     authDomain: "nosegoes-34831.firebaseapp.com",
-     databaseURL: "https://nosegoes-34831.firebaseio.com",
-     projectId: "nosegoes-34831",
-     storageBucket: "",
-     messagingSenderId: "837300799095"
-   };
-   firebase.initializeApp(config);
-
-//Realtime Authstate Listener
-
-firebase.auth().onAuthStateChanged(firebaseUser => {
-    if(firebaseUser == null){
-      window.location = 'login.html'
-    }
-});
-
-}());
-
-</script>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -90,7 +63,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
       </ul>
     </div>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span>Sign Out</a></li>
+        <li><a href=login.html><span class="glyphicon glyphicon-log-in"></span> Sign Out</a></li>
       </ul>
     </div>
   </div>
@@ -107,7 +80,6 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
           Assigned Tasks:
         </h1>
         <p>
-           <p id="name"></p>
           <ul class="assigned_task_list">
             <li> <b>Person 1:</b> Task 1-Description 1 Complete By: DD/MM/YYYY </li>
             <li> <b>Person 2:</b> Task 2-Description 2 Complete By: DD/MM/YYYY </li>
@@ -116,7 +88,6 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
             <li> <b>Person 5:</b> Task 1-Description 5 Complete By: DD/MM/YYYY </li>
           </ul>
         </p>
-
       </div>
     </div>
 

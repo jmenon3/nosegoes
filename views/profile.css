@@ -15,12 +15,12 @@ form{
   border-width: 0px;
 }
 
-input{
-  margin-bottom: 10px;
-}
-
-.loginbutton{
+.imgbutton{
   min-width:  = 100px;
   color: white;
+  border-width: none;
+  border: none;
+
   background-color: DarkBlue;
+
 }
